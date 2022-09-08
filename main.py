@@ -25,7 +25,7 @@ async def on_message(message):
             embed=discord.Embed(title="Tone Bot Help", description="Dictionary Bot For Tone Indicators", color=0x9141ac)
             embed.add_field(name="Prefix: ", value="!tb", inline=True)
             embed.add_field(name="Usage (example):", value="!tb /srs", inline=True)
-            embed.set_footer(text="Returns not nound if Tone Indicator is not present or if there is no slash in front")
+            embed.set_footer(text="Returns not found if tone indicator is not present or if there is no slash in front")
             await message.reply(embed=embed,mention_author=False)
             # help embed
         elif message.content[len(PREFIX):].lower().strip() in list(dictTI.keys()):
