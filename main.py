@@ -1,10 +1,22 @@
 import json
 import discord
 
-with open("private.json","r") as file:
-    data = json.load(file)
-    TOKEN = data["TOKEN"]
-    PREFIX = data["PREFIX"]
+try:
+    with open("config.json","r") as file:
+        data = json.load(file)
+        prefix = data["PREFIX"]
+        TOKEN = data["TOKEN"]
+except:
+    tkn = input("Enter token: ")
+    prfx = input("Enter prefix: ")
+    dictionary = {
+        "TOKEN":tkn,
+        "PREFIX":prfx
+    }
+
+    json_object = json.dumps(dictionary, indent=4)
+    with open("config.json","w") as file:
+        file.write(json_object)
 
 client = discord.Client()
 
