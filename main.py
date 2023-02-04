@@ -20,7 +20,7 @@ except:
 
 client = discord.Client()
 
-dictTI = {"/j":"joking","/hj":"half-joking", "/s":"sarcastic", "/gen":"genuine", "/g":"genuine","/srs":"serious","/nsrs":"non-serious","/pos":"positive connotation","/pc":"positive connotation","/neu":"neutral connotation","/neg":"negative connotation","/nc":"negative connotation","/p":"platonic","/r":"romantic","/c":"copypasta","/l":"lyrics","/ly":"lyrics",'/lh':"light-hearted","/nm":"not mad","/lu":"a little upset","/nbh":"for when you're vagueposting or venting, but it's directed at **nobody here**","/sx":"sexual intent","/x":"sexual intent","/nsx":"non-sexual intent","/nx":"non-sexual intent","/rh":"rhetorical question","/rt":"rhetorical question","/t":"teasing","/ij":"inside joke","/m":"metaphorically","/li":"literally","/hyp":"hpyerbole","/f":"fake","/th":"threat","/cb":"clickbait","/h":"humor"}
+dictTI = {"/j":"joking","/hj":"half-joking", "/s":"sarcastic", "/gen":"genuine", "/g":"genuine","/srs":"serious","/nsrs":"non-serious","/pos":"positive connotation","/pc":"positive connotation","/neu":"neutral connotation","/neg":"negative connotation","/nc":"negative connotation","/p":"platonic","/r":"romantic","/c":"copypasta","/l":"lyrics","/ly":"lyrics",'/lh':"light-hearted","/nm":"not mad","/lu":"a little upset","/nbh":"for when you're vagueposting or venting, but it's directed at **nobody here**","/sx":"sexual intent","/x":"sexual intent","/nsx":"non-sexual intent","/nx":"non-sexual intent","/rh":"rhetorical question","/rt":"rhetorical question","/t":"teasing","/ij":"inside joke","/m":"metaphorically","/li":"literally","/hyp":"hyperbole","/f":"fake","/th":"threat","/cb":"clickbait","/h":"humor"}
 
 @client.event
 async def on_ready():
